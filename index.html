@@ -9,25 +9,28 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body style="background-color:#24273a;">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg" navbar-blue bg>
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Asicalug</a>
+            <div class=""><a class="navbar-brand" href="#" style="color :aliceblue">Asicalug</a></div>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="index.html" title="Home Page">{{links[0].text}}</a>
+                    <a class="nav-link" aria-current="page" href="index.html" style="color: rgba(219, 219, 219, 0.767);" title="Home Page">{{links[0].text}}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="about.html" title="About Page">{{links[1].text}}</a>
+                    <a class="nav-link" aria-current="page" href="about.html" style="color: rgba(219, 219, 219, 0.767);" title="About Page">{{links[1].text}}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="posts.html" title="Posts Page">{{links[2].text}}</a>
+                    <a class="nav-link" aria-current="page" href="posts.html" style="color: rgba(219, 219, 219, 0.767);" title="Posts Page">{{links[2].text}}</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <div id="content" class="container">
-        <h1 style="color:#e5e6eb">{{ pageTitle }}</h1>
-        <p style="color:#e5e6eb">{{ pageContent }}</p>
+    <div class="container">
+        <div id="content" class="border">
+            <img src="https://cdn.discordapp.com/avatars/1080643375960707092/b4e2a3f1e27d130f37ee96d1fe81a748.webp?size=128">
+        </div>
+            <h1 style="width:500px;height:100px;border:1px;color:#e5e6eb;background-color: #202333b3;font-size: xx-large; text-align:center ;">Asicalug's</h1>
+            <p style="color:#e5e6eb">About Me</p>
     </div>
 
     <script>
@@ -42,29 +45,51 @@
                 };
             }
         }).mount('nav')
-        Vue.createApp({
-            data() {
-                return {
-                    pageTitle: "Asicalug's about me",
-                    pageContent : "aboutme"
-                };
-            }
-        }).mount('#content');
     </script>
 <!css>
     <style>
     a {
-  display: inline-block;
-  height: 50px; /*sets height of element*/
-  background: #24273a; /*sets the background of this element (here a solid colour)*/
-  transition: all 0.6s; /*sets a transition (for hover effect)*/
-  padding-left: 20px; /*sets 'padding'*/
-  padding-right: 20px; /*sets 'padding'*/
-  line-height: 50px; /*for this, it sets vertical alignment*/
-}
-a:hover {
-  background: #24273a; /*sets background colour*/
-}
-</style>
+        border-radius: 15px;
+        display: inline-block;
+        height: 65px; /*sets height of element*/
+        background: #24273a; /*sets the background of this element (here a solid colour)*/
+        transition: all 0.6s; /*sets a transition (for hover effect)*/
+        padding-left: 20px; /*sets 'padding'*/
+        padding-right: 20px; /*sets 'padding'*/
+        line-height: 50px; /*for this, it sets vertical alignment*/
+    }
+    
+    a:hover {
+        border-radius: 25px;
+        background: #333853; /*sets background colour*/
+    }
+
+    .container {
+    display: flex;
+    align-items: center;
+    justify-content: center
+    }
+
+    img {
+    max-width: 200%;
+    max-height:200%;
+    }
+
+    .text {
+    font-size: 20px;
+    padding-left: 20px;
+    }
+
+    .pfpoutline {
+        height: 100;
+        width: 100;
+        background-color: #333853;
+    }
+
+    .border {
+        border: 10px solid #202333b3;
+    }
+
+    </style>
 </body>
 </html>
