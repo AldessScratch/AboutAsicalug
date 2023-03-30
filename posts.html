@@ -8,10 +8,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
-<body style="background-color:#24273a;">
+<body style="background-color:#24273a; border-radius: 15px;">
     <nav class="navbar navbar-expand-lg" navbar-blue bg>
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Asicalug</a>
+            <div class=""><a class="navbar-brand" href="#" style="color :aliceblue">Asicalug</a></div>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="index.html" style="color: rgba(219, 219, 219, 0.767);" title="Home Page">{{links[0].text}}</a>
@@ -19,16 +19,22 @@
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="about.html" style="color: rgba(219, 219, 219, 0.767);" title="About Page">{{links[1].text}}</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item itsinit">
                     <a class="nav-link" aria-current="page" href="posts.html" style="color: rgba(219, 219, 219, 0.767);" title="Posts Page">{{links[2].text}}</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <div id="content" class="container">
-        <img src="https://cdn.discordapp.com/avatars/1080643375960707092/b4e2a3f1e27d130f37ee96d1fe81a748.webp?size=128">
-        <h1 style="width:500px;height:100px;border:1px;color:#e5e6eb;background-color: #202333b3;font-size: xx-large; text-align:center ;">Asicalug's</h1>
-        <p style="color:#e5e6eb">About Me</p>
+    <div class="container">
+        <div id="content" class="border1">
+            <img src="https://cdn.discordapp.com/avatars/1080643375960707092/b4e2a3f1e27d130f37ee96d1fe81a748.webp?size=128">
+        </div>
+        <div class="border1">
+            <h1 style="width:500px;height:100px;border:1px;color:#e5e6eb;background-color: #202333b3;font-size: xx-large; text-align:center ;"><br>Asicalug's about me</br></h1>
+        </div>
+        <div class="border1" style="color: black;">
+            <p style="color:#e5e6eb; align-items:center">About Me</p>
+        </div>
     </div>
 
     <script>
@@ -55,28 +61,45 @@
         padding-left: 20px; /*sets 'padding'*/
         padding-right: 20px; /*sets 'padding'*/
         line-height: 50px; /*for this, it sets vertical alignment*/
-}
+    }
     
     a:hover {
         border-radius: 25px;
         background: #333853; /*sets background colour*/
-}
+    }
 
     .container {
     display: flex;
     align-items: center;
     justify-content: center
-}
+    }
 
     img {
     max-width: 200%;
     max-height:200%;
-}
+    }
 
     .text {
     font-size: 20px;
     padding-left: 20px;
-}
+    }
+
+    .border1 {
+        border-radius: 25px;
+        background: #222222;
+        padding: 7px; 
+    }
+    .itsinit * {transition: none} 
+    .itsinit * {background: none}
+    .itsinit {
+        border-radius: 15px;
+        display: inline-block;
+        height: 65px; /*sets height of element*/
+        background: #353a57; /*sets the background of this element (here a solid colour)*/
+        line-height: 50px; /*for this, it sets vertical alignment*/
+        
+    }
+
     </style>
 </body>
 </html>
