@@ -23,7 +23,7 @@
                 <a class="nav-link hover" aria-current="page" href="posts.html" style="color: rgba(219, 219, 219, 0.767);" title="Posts Page">{{links[2].text}}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link hover itsinit" aria-current="page" href="test.html" style="color: rgba(219, 219, 219, 0.767);" title="Testing Purposes Page">{{links[3].text}}</a>
+                <a class="nav-link hover itsinit" aria-current="page" href="test.html" style="color: rgba(219, 219, 219, 0.767)" title="Testing Purposes Page">{{links[3].text}}</a>
             </li>
         </ul>
     </div>
@@ -70,6 +70,8 @@ body{
         height: 45px; /*sets height of element*/
         background: #353a57; /*sets the background of this element (here a solid colour)*/
         line-height: 50px; /*for this, it sets vertical alignment*/
+        position: absolute;
+        
     }
 
 .line-1{
@@ -83,6 +85,11 @@ body{
     white-space: nowrap;
     overflow: hidden;
     transform: translateY(-50%);    
+}
+
+.whiteshit {
+        background: #1e2131;
+        border-radius: 15px;
 }
 
 /* Animation */
