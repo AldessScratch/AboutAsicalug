@@ -23,13 +23,20 @@
                 <li class="nav-item">
                     <a class="nav-link hover itsinit" aria-current="page" href="posts.html" style="color: rgba(219, 219, 219, 0.767);" title="Posts Page">{{links[2].text}}</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link hover" aria-current="page" href="test.html" style="color: rgba(219, 219, 219, 0.767);" title="Testing Purposes Page">{{links[3].text}}</a>
+                </li>
             </ul>
         </div>
     </nav>
     <div class="container container-fluid">
-        <div class="border1">
-            <h1 style="width:500px;height:120px;border:1px;color:#e5e6eb;background-color: #202333b3;font-size: xx-large; text-align:center ; border-radius: 15px; align-items: center;"><br>Working on it</br></h1>
+        <div class="vertical-center">
+            <h1 class="text1" style="font-size: xx-large; position: absolute; left: 516px;"><br>Asicalug</br></h1>
         </div>
+        <div class="container vertical-center border1">
+            <span class="text1" style="position: absolute; top: 15px"><br>Hello </br></span>
+        </div>
+    </div>
 
     <script>
         Vue.createApp({
@@ -38,7 +45,8 @@
                     links: [
                         {text: 'Home', url: 'index.html'},
                         {text: 'About', url: 'about.html'},
-                        {text: 'Posts', url: 'posts.html'}
+                        {text: 'Posts', url: 'posts.html'},
+                        {text: 'Test', url : 'test.html'}
                     ]
                 };
             }
