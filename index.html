@@ -23,6 +23,9 @@
                 <li class="nav-item">
                     <a class="nav-link hover" aria-current="page" href="posts.html" style="color: rgba(219, 219, 219, 0.767);" title="Posts Page">{{links[2].text}}</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link hover" aria-current="page" href="test.html" style="color: rgba(219, 219, 219, 0.767);" title="Testing Purposes Page">{{links[3].text}}</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -42,7 +45,8 @@
                     links: [
                         {text: 'Home', url: 'index.html'},
                         {text: 'About', url: 'about.html'},
-                        {text: 'Posts', url: 'posts.html'}
+                        {text: 'Posts', url: 'posts.html'},
+                        {text: 'Test', url : 'test.html'}
                     ]
                 };
             }
@@ -78,8 +82,7 @@
     }
 
     img {
-    max-width: 200%;
-    max-height:200%;
+    border-radius: 15px;
     }
 
     .text {
@@ -122,6 +125,34 @@
         border-radius: 15px;
     }
 
+    
+    .line-1{
+        position: relative;
+        top: 50%;  
+        width: 24em;
+        margin: 0 auto;
+        border-right: 2px solid rgba(255,255,255,.75);
+        font-size: 180%;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        transform: translateY(-50%);    
+    }
+
+    /* Animation */
+    .anim-typewriter{
+        animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+    }
+
+    @keyframes typewriter{
+        from{width: 0;}
+        to{width: 24em;}
+    }
+    @keyframes blinkTextCursor{
+        from{border-right-color: rgba(255,255,255,.75);}
+        to{border-right-color: transparent;}
+    }
     </style>
 </body>
 </html>
