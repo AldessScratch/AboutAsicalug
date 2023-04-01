@@ -31,6 +31,20 @@
 
   <p class="line-1 anim-typewriter">Just some testing</p>
 
+  <script>
+    Vue.createApp({
+        data() {
+            return {
+                links: [
+                    {text: 'Home', url: 'index.html'},
+                    {text: 'About', url: 'about.html'},
+                    {text: 'Posts', url: 'posts.html'},
+                    {text: 'Test', url : 'test.html'}
+                ]
+            };
+        }
+    }).mount('nav')
+  </script>
 
   <style>
     /* Google Fonts */
