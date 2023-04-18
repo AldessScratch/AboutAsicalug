@@ -136,22 +136,19 @@
         right: 10px;
         background-image: url(close.svg);
     }
-
-    .centerdattext {
-        display: block;
-        text-align: center;
-        position: relative;
-        right: 45%;
-        top: 45%;
-        color: aliceblue;
-    }
-
-    .linkimage {
+    
+    .centerlinks {
         display: flex;
         flex-direction: column;
         align-items: center;
-        right: 100px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .linkimage {
+        visibility: hidden;
+        top: 50%;
         background-image: url(link.svg);
-        width: auto;
-        height: auto;
+        width: 118px;
+        height: 50px;
     }

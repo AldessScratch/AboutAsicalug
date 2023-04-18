@@ -62,13 +62,11 @@
             </div>
         </div>
             <div class="damenu">
-                <div class="exitdamenu">
-                    <div class="">
-                        <a class="linkimage" href="#"></a>
-                    </div>
+                <div class="exitdamenu"></div>
+                <div class="centerlinks">
+                    <a class="linkimage">Links</a>
                 </div>
             </div>
-    
 </body>
     
         
@@ -121,6 +119,12 @@
                 $('.exitdamenu').css( {
                     'visibility': 'visible'
                 });
+                $('.linkimage').css( {
+                    'visibility': 'visible',
+                    'top': '100%'
+                });
+
+
             });
 
             $('.exitdamenu').click(function() {
@@ -131,6 +135,9 @@
                 $('.damenu').css( {
                     'width': '0px',
                     'height': '0px',
+                    'visibility': 'hidden'
+                });
+                $('.linkimage').css( {
                     'visibility': 'hidden'
                 });
             });
