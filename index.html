@@ -112,8 +112,8 @@
 
             $('.openmenu').click(function() {
                 $('.damenu').css( {
-                    'width': '100%',
-                    'height': '100%',
+                    'width': '75%',
+                    'height': '75%',
                     'visibility': 'visible'
                 });
                 $('.exitdamenu').css( {
@@ -123,8 +123,9 @@
                     'visibility': 'visible',
                     'top': '100%'
                 });
-
-
+                $('.openmenu').css( {
+                    'transform': 'rotate(90deg)',
+                });
             });
 
             $('.exitdamenu').click(function() {
@@ -139,6 +140,9 @@
                 });
                 $('.linkimage').css( {
                     'visibility': 'hidden'
+                });
+                $('.openmenu').css( {
+                    'transform': 'rotate(270deg)',
                 });
             });
         </script>
