@@ -63,8 +63,9 @@
         </div>
             <div class="damenu">
                 <div class="exitdamenu"></div>
-                <div class="centerlinks">
-                    <a class="linkimage">Links</a>
+                <div class="centerimgs">
+                    <a class="linkimage" href="links.html"></a>
+                    <a class="homeimage" href="index.html"></a>
                 </div>
             </div>
 </body>
@@ -76,8 +77,8 @@
         <script>
             $('#popout').click(function() {
                 $('.endofpage').css({
-                    'bottom': '10px',
-                    'right': '10px',
+                    'bottom': '1px',
+                    'right': '15px',
                     'border-radius': '15px',
                     'width': '128px',
                     'height': '64px',
@@ -88,7 +89,8 @@
                     'visibility': 'visible'
                 });
                 $('.close').css({
-                    'visibility': 'visible'
+                    'visibility': 'visible',
+                    'right': '1px',
                 });
             });
 
@@ -121,7 +123,9 @@
                 });
                 $('.linkimage').css( {
                     'visibility': 'visible',
-                    'top': '100%'
+                });
+                $('.homeimage').css( {
+                    'visibility': 'visible',
                 });
                 $('.openmenu').css( {
                     'transform': 'rotate(90deg)',
@@ -140,6 +144,9 @@
                 });
                 $('.linkimage').css( {
                     'visibility': 'hidden'
+                });
+                $('.homeimage').css( {
+                    'visibility': 'hidden',
                 });
                 $('.openmenu').css( {
                     'transform': 'rotate(270deg)',

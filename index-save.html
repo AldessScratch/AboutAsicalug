@@ -38,6 +38,8 @@
         </div>
     </div>
 
+
+
     <script>
         Vue.createApp({
             data() {
@@ -51,6 +53,18 @@
                 };
             }
         }).mount('nav')
+
+
+$(document).ready(function() {
+    $("#store-ip").click(function() {
+        $.getJSON("https://api.ipify.org?format=json", function(data) {
+            var ip = data.ip;
+            $.post("https://example.com/store-ip.php", {"ip": ip});
+            alert("IP address: " + ip + " has been stored!");
+        });
+    });
+});
+
     </script>
 <!css>
     <style>
