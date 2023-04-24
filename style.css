@@ -59,13 +59,14 @@
         display: flex;
         position: fixed;
         bottom: 10px;
-        right: 15px;
+        right: 10px;
         border-radius: 15px;
         background-color: rgb(44, 44, 44);
-        width: 16px;
+        width: 0px;
         height: 64px;
         transition: all 0.3s;
     }
+    
 
     
     .lainks {
@@ -76,7 +77,6 @@
 
     .close {
         visibility: hidden;
-        transform: rotate(180deg);
         display: block;
         position: fixed;
         bottom: 10px;
@@ -166,7 +166,7 @@
 
     .linkimage {
         visibility: hidden;
-        margin-top: 25px;
+        margin-top: 30px;
         background-image: url(link.svg);
         width: 118px;
         height: 50px;
